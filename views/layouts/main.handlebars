@@ -1,1 +1,49 @@
+<!doctype html>
+<html lang="en">
 
+<head>
+{{!-- Meta tags --}}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  {{!-- Bootstrap --}}
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+  <title>Tech Blog!</title>
+
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <ul class="nav">
+    <li class="nav-item">
+      <a class="nav-link" href="/">Home</a>
+    </li>
+    {{#if logged_in}}
+    <li class="nav-item">
+      <a class="nav-link" href="/dashboard/:id">Dashboard</a>
+    </li>
+    {{else}}
+    <li class="nav-item">
+      <a class="nav-link" href="/credential/login">Dashboard</a>
+    </li>
+    {{/if}}
+    {{#if logged_in}}
+    <li class="nav-item">
+      <a id="logout" class="nav-link" href="#">Log Out</a>
+    </li>
+    {{else}}
+    <li class="nav-item">
+      <a class="nav-link" href="/credential/login">Login</a>
+    </li>
+    {{/if}}
+  </ul>
+
+  {{{body}}}
+
+{{!-- Link to logout.js --}}
+  <script src="/js/logout.js"></script>
+</body>
+
+</html
