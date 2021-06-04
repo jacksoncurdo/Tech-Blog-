@@ -1,1 +1,18 @@
-
+[
+    {
+      "title": "MVC",
+      "content": "MVC stands for Model-View-Controller and is a method of building a functional website and database."
+    },
+      {
+      "title": "Handlebars",
+      "content": "When using the MVC method, a great tool to create different html pages is handlebars.js!"
+    },
+    {
+      "title": "MySQL",
+      "content": "MYSQl has been around for a long time and is one of the most trusted options for creating a functional database."
+    },
+    {
+      "title": "Web Development",
+      "content": "A growing industry that provides plenty of opportunity for growth. You will never have a dull moment, as you will be constantly learning new things."
+    }
+  ]
