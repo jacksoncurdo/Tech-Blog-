@@ -5,7 +5,7 @@
     },
       {
       "title": "Handlebars",
-      "content": "When using the MVC method, a great tool to create different html pages is handlebars.js!"
+      "content": "Handlebars.js is a great tool to use with the MVC method, Handlebars.js can be used to create and render different html pages"
     },
     {
       "title": "MySQL",
@@ -13,6 +13,6 @@
     },
     {
       "title": "Web Development",
-      "content": "A growing industry that provides plenty of opportunity for growth. You will never have a dull moment, as you will be constantly learning new things."
+      "content": "A growing industry that provides endless opportunities for creativity, innovation, and problem solving. There is always something new to learn when it comes to web devlopment, the learning never stops!"
     }
   ]
