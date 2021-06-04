@@ -2,7 +2,7 @@ const router = require('express').Router();
 const { Post, User, Comment } = require('../models');
 const withAuth = require('../utils/auth');
 
-// Route to get homepage
+// Get request to display all posts on the homepage
 router.get('/', async (req, res) => {
   try {
     const postData = await Post.findAll({
@@ -25,6 +25,7 @@ router.get('/', async (req, res) => {
   }
 });
 
+// Get request for specifc information
 router.get('/post/:id', withAuth, async (req, res) => {
   try {
     const postData = await Post.findByPk(req.params.id, {

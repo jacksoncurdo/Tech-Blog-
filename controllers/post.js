@@ -2,7 +2,8 @@ const router = require('express').Router();
 const { Post, User } = require('../models');
 const withAuth = require('../utils/auth');
 
-// Get request for a users id
+
+// Gets user dashboard
 router.get('/:id', async (req, res) => {
   try {
     const userData = await User.findByPk(req.session.user_id, {
@@ -21,7 +22,7 @@ router.get('/:id', async (req, res) => {
   }
 });
 
-// Get request for creating a post page
+// Gets create post form page
 router.get('/post/create', async (req, res) => {
     try {
       res.render('create-Post', {
@@ -38,7 +39,7 @@ router.get('/post/create', async (req, res) => {
   }
 });
 
-// Get request for the id of a post 
+// Gets update page
 router.get('/post/:id', async (req, res) => {
   try {
     const postData = await Post.findByPk(req.params.id, {
