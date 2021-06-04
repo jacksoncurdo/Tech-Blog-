@@ -20,7 +20,7 @@ const editFormHandler = async (event) => {
         alert('Failed to update post');
       }
     }
-  };
+  }
 
   document
   .querySelector('.update-form')
