@@ -1,1 +1,19 @@
+<h1>Dashboard</h1>
 
+{{#if posts.length}}
+<div class="col-md-6 project-list">
+  <h3>Current Posts:</h3>
+
+  {{#each posts as |post|}}
+  <div class="row mb-2">
+    <div class="col-md-8">
+      <h4 class="card-header"><a href="/dashboard/post/{{post.id}}">{{post.title}}</a></h4>
+    </div>
+  </div>
+  {{/each}}
+</div>
+{{/if}}
+
+<div>
+  <a role="button" class="btn btn-primary new-post" href="/dashboard/post/create">New Post</a>
+</div>
