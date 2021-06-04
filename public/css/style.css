@@ -1,0 +1,35 @@
+.card {
+    padding: 25px;
+  }
+  
+  .card-header,
+  .nav,
+  h1 {
+    background-color: blue;
+  }
+  
+  .card-body {
+    background-color: white;
+  }
+  
+  a,
+  .detail-font,
+  .card-header {
+    color: white;
+  }
+  
+  h1 {
+    color: white;
+  }
+  
+  .detail-font {
+    font-size: small;
+  }
+  
+  .btn-danger {
+    margin-top: 15px;
+  }
+  
+  .new-post {
+    margin-left: 15px;
+  }
