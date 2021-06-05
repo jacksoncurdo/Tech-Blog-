@@ -1,8 +1,8 @@
 const router = require('express').Router();
 const apiRoutes = require('./api');
-const home = require('./home');
-const post = require('./post');
-const user = require('./user');
+const home = require('./home.js');
+const post = require('./post.js');
+const user = require('./user.js');
 
 router.use('/', home);
 router.use('/post', post);
